@@ -1,0 +1,34 @@
+//过渡
+.fade-move-enter-active,
+.fade-move-leave-active {
+  transition: 0.3s all ease;
+  // position: absolute
+}
+
+.fade-move-enter,
+.fade-move-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.fade-move-enter-to,
+.fade-move-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+//放大
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  transition: 0.3s all ease;
+  // position: absolute
+}
+
+.fade-scale-enter,
+.fade-scale-leave-to {
+  opacity: 0;
+  transform: scale(0);
+}
+.fade-scale-enter-to,
+.fade-scale-leave {
+  opacity: 1;
+  transform: scale(1);
+}
